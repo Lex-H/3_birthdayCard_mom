@@ -79,3 +79,12 @@ p {
     width: 20vw;
     margin: 1vw;
 }
+
+.picBig {
+    width: 65vw;
+    margin: 1vw;
+}
+
+.biggerPic {
+    width: 65vw;
+}

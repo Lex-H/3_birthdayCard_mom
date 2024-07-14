@@ -11,11 +11,28 @@ $(document).ready(function(){
     });
 });
 
+function biggerPic(el) {
+    el.classList.add("biggerPic")
+    
+    // addEventListener("mouseleave", (event) => {});
+}
+
+
+
 // 批次展示照片
 var countI = 0;
 let picTemple = "";
 for (i=1;i<=39;i++) {
-    picTemple = picTemple + '<img class="pic" src="img/pic/' + i + '.webp"></img>'
+    var remainder = i%4;
+    
+    if (remainder == 1) {
+        picTemple = picTemple + '<img class="picBig" onclick="biggerPic(this)" src="img/pic/' + i + '.webp"></img>'
+    }else{
+        picTemple = picTemple + '<img class="pic" onclick="biggerPic(this)" src="img/pic/' + i + '.webp"></img>'
+    }
+
+
+    
     countI =+1;
 }
 document.querySelector(".picContainer").innerHTML = picTemple;
