@@ -15,7 +15,7 @@ $(document).ready(function(){
 var countI = 0;
 let picTemple = "";
 for (i=1;i<=39;i++) {
-    picTemple = picTemple + '<img class="pic" src="img/pic/' + i + '.jpg"></img>'
+    picTemple = picTemple + '<img class="pic" src="img/pic/' + i + '.webp"></img>'
     countI =+1;
 }
 document.querySelector(".picContainer").innerHTML = picTemple;
