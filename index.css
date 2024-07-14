@@ -19,6 +19,9 @@ body, h1 {
 }
 
 header {
+    position: fixed;
+    top: 1vh;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     margin: 2vw;
@@ -34,6 +37,8 @@ h1 {
 }
 
 main {
+    position: relative;
+    top: 10vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -87,4 +92,17 @@ p {
 
 .biggerPic {
     width: 65vw;
+}
+
+.nav {
+    position: fixed;
+    right: 1.5vh;
+    bottom: 1.5vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    background-color: #CFBAE1;
+    font-size: 5vw;
+    border-radius: 10vw;
+    padding: 2vw;
 }

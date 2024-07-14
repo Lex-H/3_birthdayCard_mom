@@ -12,12 +12,8 @@ $(document).ready(function(){
 });
 
 function biggerPic(el) {
-    el.classList.add("biggerPic")
-    
-    // addEventListener("mouseleave", (event) => {});
+    el.classList.add("biggerPic");
 }
-
-
 
 // 批次展示照片
 var countI = 0;
